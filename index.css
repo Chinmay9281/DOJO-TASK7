@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+    position: fixed;
+    background: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.image-div{
+    width: 30%;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.button-section{
+    text-align: right;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn1{
+    background-image: url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_100/InstamartMicrosite/OfferBadge");
+    background-repeat: no-repeat;
+    background-size: 135px 55px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    color: #ff5422;
+    font-weight: bold;
+    background-color: transparent;
+    margin-right: 50px;
+    border-color: #ff5422;
+}
+.btn2{
+    padding: 0 16px;
+    border: 1px solid #851951;
+    color: #851951;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    border-radius: 5px;
+
+}
+
+/* content section */
+#content{
+    display: flex;
+    padding: 2% 10%;
+    background:url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_400/InstamartMicrosite/BGBottom");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 50% ;
+    background-color: #881952;
+    color: #fff;
+    margin-top: 120px;
+}
+.textSection{
+    width: 100%;
+}
+.textHeading{
+    width: 40%;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.textPara{
+    margin-bottom: 10px;
+}
+.btn3{
+    padding: 20px;
+    background: #ff5422;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid #da8301!important;
+    margin-bottom: 10px;
+}
+.trust{
+    display: flex;
+    width: 80%;
+    margin-bottom: 5px;
+}
+.imageSection{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+.imageSection img{
+    width: 20%;
+    cursor: pointer;
+}
+.imageSection img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+/* grocery section */
+#grocery{
+    display: flex;
+    padding: 2% 10%;
+    background:url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1200/InstamartMicrosite/Categories");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 500px 800px;
+    height: 800px;
+}
+.grocery-text{
+    width: 50%;
+    padding-top: 20%;
+}
+.grocery-heading{
+    font-size: 55px;
+}
+.grocery-delivery img{
+    width: 15%;
+}
+.grocery-delivery{
+    display: flex;
+    margin:50px 0px;
+}
+.grocery-delivery h4{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+
+/* brands section */
+#brands{
+    padding: 2% 10%;
+}
+.brands-heading{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: bolder;
+}
+.p{
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+}
+.Img{
+    width: 10%;
+    margin: 50px;
+}
+.brands-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* downloads section */
+
+#downloads{
+    padding: 0 10%;
+    display: flex;
+    background: url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_400/InstamartMicrosite/FooterBGBottom");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 40% ;
+    /* background-color: #881952; */
+    
+}
+.logo-section{
+    width: 50%;
+}
+.logo-section img{
+    width: 100%;
+}
+.download-section{
+    width: 50%;
+    padding: 25px;
+    padding-top: 100px;
+}
+.d-heading{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+.coupon{
+    font-size: 25px;
+    padding-left: 20px;
+}
+.download-para{
+    font-size: 25px;
+}
+.t-download{
+    margin: 10px 0px;
+    width: 100%;
+}
+.t-download span{
+    font-size: 25px;
+}
+.link{
+    width: 50%;
+}
+.link img{
+    width: 40%;
+}
+/* footer section */
+footer{
+    background-color: #881952;
+    padding: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-p{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.social-links a{
+    margin: 0 10px;
+}
+
+/* responsive */
+@media (min-width:901px) and (max-width:1000px){
+    /* downloads section */
+    .logo-section{
+        position: relative;
+    }
+    .logo-section img{
+        width: 100%;
+        position: absolute;
+        top: 32%;
+    }
+}
+@media (max-width:900px){
+    #content{
+        padding: 20px;
+    }
+    .textHeading{
+        width: 60%;
+    }
+    .imageSection img{
+        width: 30%;
+    }
+    /* grocery section */
+    #grocery{
+        padding: 20px;
+    }
+    .grocery-text{
+        width: 70%;
+    }
+    /* brands section */
+    #brands{
+        padding: 20px;
+    }
+    .brands-logo img{
+        width: 18%;
+    }
+    #downloads{
+        padding: 20px;
+    }
+    /* downloads section */
+    .logo-section{
+        position: relative;
+    }
+    .logo-section img{
+        width: 100%;
+        position: absolute;
+        top: 32%;
+    }
+    @media (max-width:700px){
+        /* navbar */
+        .btn2{
+            display: none;
+        }
+        .btn1{
+            margin-right: 0px;
+        }
+        .image-div{
+            width: 40%;
+        }
+        .image{
+            width: 100%;
+        }
+        .button-section{
+            text-align: right;
+            width: 60%;
+        }
+        /* content */
+        #content{
+            padding: 10px;  
+            flex-direction: column;
+        }
+        .textSection{
+            width: 100%;
+            padding: 10px;
+        }
+        .textHeading{
+            width: 100%;
+        }
+        
+        /* grocery */
+        #grocery{
+            padding: 10px;
+            background: none;
+        }
+        .grocery-text{
+            width: 100%;
+        }
+        /* brands */
+        .brands-logo img{
+            margin: 15px;
+        }
+        .grocery-delivery{
+            flex-wrap: wrap;
+        }
+        /* downloads */
+        #downloads{
+            padding: 10px;
+            flex-direction: column-reverse;
+            padding-bottom: 410px;
+            background-size: 100% 20% ;
+        }
+        .download-section{
+            width: 100%;
+            margin-top: -20px;
+        }
+        .logo-section{
+            margin-top: 0px;
+        }
+        .logo-section img{
+            width: 150%;
+        }
+        /* footer */
+        .footer{
+            flex-wrap: wrap;
+        }
+        .footer div{
+            margin: 10px 0px;
+        }
+        @media (max-width:400px){
+            /* navbar */
+            .nav{
+                padding: 5px;
+            }
+            .image-div img{
+                height: 80%;
+                width: 80%;
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+            /* grocery  */
+            .grocery-delivery img{
+                width: 30%;
+            }
+            /* brands */
+            .brands-logo img{
+                /* margin: 5px; */
+                width: 35%;
+            }
+            /* downloads */
+            #downloads{
+                padding-bottom: 300px;
+            }
+            @media (max-width:300px){
+                /* content */
+                #content{
+                    margin-right: -90px;
+                }
+                .btn3{
+                    height: 50px;
+                    font-size: 15px;
+                }
+                .imageSection img{
+                    width: 40%;
+                }
+                /* grocery */
+                #grocery{
+                    margin-right: -90px;
+                }
+                /* brands */
+                #brands{
+                    margin-right: -90px;
+                }
+                /* downloads */
+                #downloads{
+                    margin-right: -90px;
+                }
+                .logo-section{
+                    width: 70%;
+                }
+                /* footer */
+                footer{
+                    margin-right: -90px;
+                }
+            }
+        }
+    }
+}
