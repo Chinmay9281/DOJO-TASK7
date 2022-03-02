@@ -299,6 +299,7 @@ footer{
         #content{
             padding: 10px;  
             flex-direction: column;
+            background-size: 100% 20%;
         }
         .textSection{
             width: 100%;
